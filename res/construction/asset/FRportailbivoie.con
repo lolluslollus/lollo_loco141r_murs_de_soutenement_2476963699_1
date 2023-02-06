@@ -1,35 +1,31 @@
-local constructionutil = require "constructionutil"
+local constructionHelpers = require('murs_de_sout.constructionHelpers')
+local transfUtilUG = require 'transf'
 
 function data()
-
-return { 
-	type = "ASSET_DEFAULT",
-	description = {
-		name = _("Portail de tunnel à double-voie"),			
-		description = _("Double Tunnel 10m block")
-	},
-	availability = {
-		yearFrom = 1850,
-	},
-	buildMode = "MULTI",
-	categories = { "FSassets" },
-	order = 105,
-	skipCollision = true,
-	autoRemovable = false,
-	updateFn = function(params)
-		local result = { }
-
-		result.models = { {
-			id = "asset/FRportailbivoie.mdl",
-			transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }),
-		} }
-
-	result.terrainAlignmentLists = { {
-			type = "EQUAL",
-			faces =  { }
-		} }
-    	return result
-	end
-}
-
+	return {
+		type = "ASSET_TRACK",
+		description = {
+			name = _("Portail de tunnel à double-voie"),			
+			description = _("Double Tunnel 10m block")
+		},
+		availability = {
+			yearFrom = 0,
+		},
+		buildMode = "SINGLE",
+		categories = { "FSassets" },
+		order = 106,
+		skipCollision = true,
+		autoRemovable = false,
+		updateFn = function(params)
+			local result = {
+				groundFaces = constructionHelpers.getDummyGroundFaces(),
+				models = { {
+					id = "asset/FRportailbivoie.mdl",
+					transf = transfUtilUG.mul(constructionHelpers.idTransf(), transfUtilUG.transl({x = 0, y = 2.5, z = 0})),
+				} },
+				terrainAlignmentLists = constructionHelpers.getDummyTerrainAlignmentLists(),
+			}
+			return result
+		end
+	}
 end

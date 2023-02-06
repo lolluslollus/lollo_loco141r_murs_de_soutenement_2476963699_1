@@ -1,5 +1,5 @@
 function data()
-	return {  
+	return {
 		info = {
 			tags = { "SNCF", "Mur", "France", "Wall", "Retaining", "Massif Central", "Tunnel", "PLM", "PO",},
 			minorVersion = 2,
@@ -11,15 +11,19 @@ function data()
 				{
 					name = "Lenz",
 					role = "CREATOR",
+				},
+				{
 					name = "Loco141R",
 					role = "CO_CREATOR",
+				},
+				{
+					name = "lollus",
+					role = "CREATOR",
 				},
 			},
 			visible = true,
 		},
 		options = {
 		},
-		runFn = function (settings)		
-		end
 	}
 end
