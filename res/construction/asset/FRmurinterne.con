@@ -1,0 +1,35 @@
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Angle interne"),			
+		description = _("Inner Corner 10m")
+	},
+	availability = {
+		yearFrom = 1850,
+	},
+	buildMode = "MULTI",
+	categories = { "FSassets" },
+	order = 105,
+	skipCollision = true,
+	autoRemovable = false,
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { {
+			id = "asset/FRmurinterne.mdl",
+			transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }),
+		} }
+
+	result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+    	return result
+	end
+}
+
+end

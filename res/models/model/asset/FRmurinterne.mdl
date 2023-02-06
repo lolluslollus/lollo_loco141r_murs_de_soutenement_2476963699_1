@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 9.8628463745117, 5.3820533752441, 10.997945785522, },
+		bbMin = { -0.52884864807129, -4.9999995231628, -0.00039755887701176, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.1958475112915, 5.1910266876221, 5.4991717338562, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRmurinterne.mtl", },
+						mesh = "asset/nglestrn10m.msh",
+						name = "Angle interne",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2580.1921386719,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0021529197693, 4.9973006248474, 10.994779586792, },
+		bbMin = { -4.9978470802307, -5.0027003288269, 0.011651388369501, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5, 5.0000004768372, 5.4915642738342, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRmurexterne.mtl", },
+						mesh = "asset/nglntrn10m.msh",
+						name = "Angle externe",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2495.3061523438,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,35 @@
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Montée gauche 10m"),			
+		description = _("Montée gauche 10m")
+	},
+	availability = {
+		yearFrom = 1850,
+	},
+	buildMode = "MULTI",
+	categories = { "FSassets" },
+	order = 105,
+	skipCollision = true,
+	autoRemovable = false,
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { {
+			id = "asset/FRmonteG10m.mdl",
+			transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }),
+		} }
+
+	result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+    	return result
+	end
+}
+
+end

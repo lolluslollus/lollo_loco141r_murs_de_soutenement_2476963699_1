@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0111193656921, 5.0071225166321, 9.9622316360474, },
+		bbMin = { -0.27847868204117, -5.0729403495789, -0.00039801924140193, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6447989940643, 5.0400314331055, 4.9813146591187, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRmonteG10m.mtl", },
+						mesh = "asset/sltdstr10m.msh",
+						name = "Montée Mur gauche 10m",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2350.3962402344,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

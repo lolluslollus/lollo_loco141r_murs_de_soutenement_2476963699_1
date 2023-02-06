@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0358262062073, 25.000202178955, 9.9617834091187, },
+		bbMin = { -0.35428839921951, -24.999795913696, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6950573921204, 25, 4.9808917045593, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRmur50m.mtl", },
+						mesh = "asset/murodicinta50m.msh",
+						name = "Mur 20m",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4157.2280273438,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0091757774353, 4.9999299049377, 9.9606218338013, },
+		bbMin = { -0.28523004055023, -5.0003190040588, 0.00037733218050562, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6472029685974, 5.0001244544983, 4.980122089386, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRportail.mtl", },
+						mesh = "asset/gllrsngl10m.msh",
+						name = "portail tunnel voie unique",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2347.3666992188,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

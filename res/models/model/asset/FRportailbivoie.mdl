@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0091757774353, 4.9988870620728, 9.9606218338013, },
+		bbMin = { -0.32550185918808, -5.0013618469238, 0.0019466853700578, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.667338848114, 5.0001244544983, 4.9793376922607, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRportailbivoie.mtl", },
+						mesh = "asset/gllrdpp10m.msh",
+						name = "Portail tunnel double-voie",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2347.7734375,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

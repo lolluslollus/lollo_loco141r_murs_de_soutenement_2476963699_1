@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.1509480476379, 9.9784908294678, 10.997200012207, },
+		bbMin = { -0.15416467189789, -9.8313465118408, 0.0067849489860237, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6525564193726, 9.9049186706543, 5.4952073097229, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/FRportailbitube.mtl", },
+						mesh = "asset/cntrgllr20m.msh",
+						name = "Portail tunnel bi-tube",
+						transf = { 100, 0, 0, 0, 0, -1.6292067812174e-05, -100, 0, 0, 100, -1.6292067812174e-05, 0, 0, 0.028509525582194, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2921.8266601563,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
